@@ -1,16 +1,12 @@
 # dara_music_library
 
-A new Flutter project.
+Playlist song tracker app, with the following functionalities:
 
-## Getting Started
+  - You can log in to the app with a username, email and password (if it does not match, it does not let you in). 
+  - Once you are in, the main screen is a song queue, where you can add songs (add the name of the song, the artist, and a link to the song). These come up in a list fashion in the main screen. 
+  - You can delete a song by swiping left, and edit a song's details by swiping right. 
+    - After you delete a song, a snackbar comes up, prompting you to UNDO. If you press undo, the song comes back
+  - You can press on a song tile to be taken to the link. If the link does not work, you get a snack bar saying so. Otherwise, you will be taken there directly. 
+  - The app utilizes shared preferences, meaning that if you reload, exit and come back, the songs will still be there. You can delete one song at a time from the shared preferences and the app, or you can delete the whole playlist through a button in the drawer. 
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  - There is no parsing and reading from JSON files in this app. 
